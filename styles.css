@@ -1,10 +1,69 @@
 /*Maak hier jouw CSS!*/
-doe eens wat anders
+.grid-container {
+    display: grid;
+    background-color: darkcyan;
+    grid-template-columns: 1fr;
+    padding: 16px;
+    row-gap: 16px;
+    column-gap: 16px;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+            "header"
+            "brood"
+            "groot-blok"
+            "klein-blok"
+            "dynamisch-blok"
+            "."
+            "footer";
+}
 
-jahhaha
+@media screen and (min-width: 576px) {
+    .grid-container {
+        background-color: darkcyan;
+        padding: 16px;
+        display: grid;
+        row-gap: 16px;
+        column-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+               "header groot-blok groot-blok"
+               "brood groot-blok groot-blok"
+               "brood dynamisch-blok klein-blok"
+               "brood dynamisch-blok . "
+               "footer footer footer";
+    }
+}
 
+[class|=grid-item] {
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: chocolate;
+}
 
-fjv;lkn
+#a {
+    grid-area: header;
+}
 
+#b {
+    grid-area: brood;
+}
 
-    pewpew
+#c {
+    grid-area: groot-blok;
+}
+
+#d {
+    grid-area: klein-blok;
+}
+
+#e {
+    grid-area: dynamisch-blok;
+}
+
+#f {
+    grid-area: footer;
+}
