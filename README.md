@@ -34,3 +34,4 @@ Oké, je mag weer aan je laptop komen!
 12. Beschrijf buiten de media query een nieuwe grid aan de hand van jouw schets voor _Mobiel_, door de afmetingen van de `grid-template-rows` en `grid-template-columns` te beschrijven.
 13. Gebruik de huidige grid-area namen om de items aan de grid toe te wijzen met behulp van de `grid-template-areas`
 14. Resize jouw scherm en bekijk jouw CSS Grid in actie!
+# frontend-css-grid-v2
